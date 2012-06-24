@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    yWorld
+                </h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page10" data-theme="" data-icon="search">
+                                Tag it
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page9" data-theme="" data-icon="grid">
+                                My Tags
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page7" data-theme="" data-icon="gear">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Pinot@Phaedrus
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page11" data-transition="slide">
+                            20% off until Friday
+                        </a>
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        LillyDress@ProudPeacock
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Hurry, 5 just arrived in stock!
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Tag it -->
+        <div data-role="page" id="page10">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    yWorld
+                </h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page10" data-theme="" data-icon="search" class="ui-btn-active ui-state-persist">
+                                Tag it
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page9" data-theme="" data-icon="grid">
+                                My Tags
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page7" data-theme="" data-icon="gear">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput4">
+                            Enter your tag
+                        </label>
+                        <input id="textinput4" placeholder="" value="Pinot@Phaedrus" type="text" />
+                    </fieldset>
+                </div>
+                <a data-role="button" data-transition="fade" data-theme="a" href="#page11">
+                    Tag it
+                </a>
+            </div>
+        </div>
+        <!-- My Tags -->
+        <div data-role="page" id="page9">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    yWorld
+                </h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page10" data-theme="" data-icon="search">
+                                Tag it
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page9" data-theme="" data-icon="grid" class="ui-btn-active ui-state-persist">
+                                My Tags
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page7" data-theme="" data-icon="gear">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        My Tags
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page11" data-transition="slide">
+                            Pinot@Phaedrus
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page11" data-transition="slide">
+                            LillyDress@ProudPeacock
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Settings -->
+        <div data-role="page" id="page7">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    yWorld
+                </h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page10" data-theme="" data-icon="search">
+                                Tag it
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page9" data-theme="" data-icon="grid">
+                                My Tags
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page7" data-theme="" data-icon="gear" class="ui-btn-active ui-state-persist">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput5">
+                            Full name
+                        </label>
+                        <input id="textinput5" placeholder="" value="Robby White" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput6">
+                            Email
+                        </label>
+                        <input id="textinput6" placeholder="" value="robby@yworld.com.au" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput7">
+                            Mobile
+                        </label>
+                        <input id="textinput7" placeholder="" value="0415 339192" type="text" />
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <!-- Pinot@Phaedrus -->
+        <div data-role="page" id="page11">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    yWorld
+                </h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page10" data-theme="" data-icon="search">
+                                Tag it
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page9" data-theme="" data-icon="grid" class="ui-btn-active ui-state-persist">
+                                My Tags
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page7" data-theme="" data-icon="gear">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+                        <legend>
+                        </legend>
+                        <input name="checkbox1" id="checkbox1" type="checkbox" />
+                        <label for="checkbox1">
+                            Tagged
+                        </label>
+                    </fieldset>
+                </div>
+                <div>
+                    <address data-mce-style="text-align: center;" style="text-align: center;">
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            Pinot@Phaedrus
+                        </span>
+                    </address>
+                    <h2 style="text-align: center; " data-mce-style="text-align: center;">
+                        2009 Pinot Noir
+                    </h2>
+                    <p style="text-align: center; " data-mce-style="text-align: center;">
+                        <br />
+                    </p>
+                </div>
+                <h3>
+                </h3>
+                <div style=" text-align:center">
+                    <img style="width: 50%; height: 50%" src="http://assets.codiqa.com/ps/18431/e733dc2a006edfd3pinot.jpg" />
+                </div>
+                <div>
+                    <p style="text-align: center; ">
+                        Made in a style for cellaring, the wine has spent 20 months in new French
+                        oak. Intense ripe fruit has complexed with spice and oak, the result being
+                        a bold wine with loads of flavour and a firm tannin backbone....
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Pinot@Phaedrus Copy -->
+        <div data-role="page" id="page8">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    yWorld
+                </h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page10" data-theme="" data-icon="search">
+                                Tag it
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page9" data-theme="" data-icon="grid" class="ui-btn-active ui-state-persist">
+                                My Tags
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page7" data-theme="" data-icon="gear">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+                        <legend>
+                        </legend>
+                        <input name="checkbox2" id="checkbox2" type="checkbox" />
+                        <label for="checkbox2">
+                            Tagged
+                        </label>
+                    </fieldset>
+                </div>
+                <div>
+                    <address style="text-align: center;" data-mce-style="text-align: center;">
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            LillyDress@ProudPeacock
+                        </span>
+                    </address>
+                    <h2 style="text-align: center; " data-mce-style="text-align: center;">
+                        The Lilly Dress
+                    </h2>
+                    <p style="text-align: center; " data-mce-style="text-align: center;">
+                        <br />
+                    </p>
+                </div>
+                <h3>
+                </h3>
+                <div style=" text-align:center">
+                    <img style="width: 198px; height: 254px" src="http://assets.codiqa.com/ps/18431/18c6a338ed6300bbdress.jpg" />
+                </div>
+                <div>
+                    <p style="text-align: center; ">
+                        Made in a style for cellaring, the wine has spent 20 months in new French
+                        oak. Intense ripe fruit has complexed with spice and oak, the result being
+                        a bold wine with loads of flavour and a firm tannin backbone....
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
